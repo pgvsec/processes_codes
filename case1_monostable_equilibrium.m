@@ -125,7 +125,7 @@ if min(e) <= 0
 end
 
 % Sampling with rejection to enforce [0,1]^{6}
-Np     = 1e3;         % number of particles
+Np     = 1e5;         % number of particles
 dim    = 6;
 X0     = zeros(Np, dim);
 have   = 0;
@@ -938,3 +938,4 @@ function J = jacobian_complex(F_handle, x, t, z_scalar)
         J(:,k) = imag(F_c(:)) / h;   % exact derivative
     end
 end
+
