@@ -184,7 +184,7 @@ if min(eigsSigma) <= 0
     error('Covariance Sigma is not positive semidefinite. Adjust R/sigma.');
 end
 
-Np  = 1e3;     % number of particles
+Np  = 1e4;     % number of particles
 dim = 6;
 X0  = zeros(Np, dim);
 have = 0;
